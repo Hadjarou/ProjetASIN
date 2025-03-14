@@ -254,9 +254,9 @@ python3 main.py describe --db personnes --table utilisateurs
 ## 2 - **Exécution du script avec un alias**
 
   ### **Activation de l'environnement virtuel**
-    ```bash
+  ```bash
     ENVASIN
-    ```
+  ```
 ### **Rendre le script exécutable**
 Avant de pouvoir utiliser un alias, il est nécessaire de rendre le script exécutable :
 
