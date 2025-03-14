@@ -260,7 +260,7 @@ PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colon
   ````bash
     deactivate
   ````
-## *TAPER `ENVASIN` peut import où vous êtes pour activer l'environnement du projet*
+## *TAPER `ENVASIN` peu importe où vous êtes pour activer l'environnement du projet*
 
 ---
 ## D - Ouvrir la base avec SQLite en ligne de commande
