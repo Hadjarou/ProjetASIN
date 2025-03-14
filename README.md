@@ -112,13 +112,13 @@ Pour démarrer l'environnement avec une commande plus concise, comme `ENVASIN`, 
   ````bash
   pip install pytest
   ````
-  ## 1. Test sans affichage des données après l'importation 
+  ## 1. Test sans affichage des données dans le terminal après l'importation 
   ````bash
   python -m pytest -v tests/test_sqlite.py
   ````
-  ## 2 Test avec affichage des données après l'importation
+  ## 2 Test avec affichage des données dans le terminal après l'importation
   ````bash
-    python -m pytest -v tests/test_sqlite.py
+    python -m pytest -s tests/test_sqlite.py
   ````
   *Après avoir exécuter l'une de ces commandes un fichier test_db.sqlite sera genéré dans votre repertoire de travail, 
       ce fichier correspond à la base de données sqlite avec les données du fichier excel importé*
