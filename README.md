@@ -312,7 +312,7 @@ sqlite3 personnes
   Avant d'exécuter toute commande, assurez-vous d'activer l'environnement virtuel :
   ### *Tout d'abord aller dans le répertoire de votre projet et taper cette commande :*
   ```bash
-  source venv/bin/activate
+  nom_de_votre_alias_pour_activer_le_projet
   ```
   ### *Lister le contenu du dossier tests :*
   ````bash
