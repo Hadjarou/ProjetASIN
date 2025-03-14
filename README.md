@@ -191,14 +191,15 @@ source venv/bin/activate
 
 ### **Exécution du script avec l’alias**
 Une fois l’alias configuré, il est possible d’exécuter les commandes en utilisant `PASIN` directement.
-### *Assurez-vous d'activer l'environnement au préalable*
+Le proccessus sera le même, mais cette fois au lieu de taper pyhton main.py avant d'exécuter les commandes on utilise directement `PASIN`
+### *Assurez-vous d'activer l'environnement au préalable* ( Voir option activer l'environnement)
 **Exemple :**  
 ```bash
 PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colonne2:type2> ...
 ```
-## Le proccessus sera le même, mais cette fois au lieu de taper pyhton main.py avant d'exécuter les commandes on utilise directement `PASIN`
 
-### *Ouvrir la base avec SQLite en ligne de commande*
+
+## Ouvrir la base avec SQLite en ligne de commande
 ### Installer sqlite3
 ````bash
 sudo apt update
