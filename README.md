@@ -326,6 +326,10 @@ sqlite3 personnes
   ```
   Ajoutez la ligne suivante à la fin du fichier :  
   ```bash
+  alias NOM_ALIAS="source /chemin/vers/votre/projet/venv/bin/activate"
+  ```
+  # **Exemple :**
+  ```bash
   alias ENVASIN="source /root/ProjetASIN/venv/bin/activate"
   ```
   ## Note : Le chemin doit être absolu, de la racine jusqu'au fichier main.py
