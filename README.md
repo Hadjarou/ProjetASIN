@@ -274,6 +274,11 @@ sudo apt install sqlite3
 ````bash
 sqlite3 <nom_base>
 ````
+## OU
+````bash
+sqlite3 /chemin/vers/votre/base_de_donnees/<nom_base>
+````
+
 **Exemple :**
 ```bash
 sqlite3 personnes
