@@ -107,11 +107,11 @@ pyhton main.py
      list-tables --db <nom_db>
      Exemple : list-tables --db personnes
   
-  7. Voir le contenu d/'une table :
+  7. Voir le contenu d\'une table :
      view --db <nom_db> --table <nom_table>
      Exemple : view --db personnes --table utilisateurs
   
-  8. Voir la structure d/'une table (DESCRIBE) :
+  8. Voir la structure d\'une table (DESCRIBE) :
      describe --db <nom_db> --table <nom_table>
      Exemple : describe --db personnes --table utilisateurs
 
