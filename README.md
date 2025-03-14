@@ -328,10 +328,6 @@ sqlite3 personnes
   ```bash
   alias NOM_ALIAS="source /chemin/vers/votre/projet/venv/bin/activate"
   ```
-  # **Exemple :**
-  ```bash
-  alias ENVASIN="source /root/ProjetASIN/venv/bin/activate"
-  ```
   ## Note : Le chemin doit être absolu, de la racine jusqu'au fichier main.py
   
   Rechargez ensuite le fichier de configuration pour appliquer les modifications :  
