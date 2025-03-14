@@ -302,9 +302,9 @@ sqlite3 personnes
   ````bash
   SELECT * FROM <nom_de_la_table>;
   ````
-  **Exemple :**
+  **Exemple : Affichage de 50 premières lignes**
   ```bash
-  .SELECT * FROM utilisateurs;
+  SELECT * FROM utilisateurs LIMIT 50;
   ```
 
   ### Quitter :
