@@ -140,7 +140,7 @@ pip install -r requirements.txt
 
 ## Vérifier si le projet a bien été déployer
 ```bash
-pyhton main.py
+python main.py
 ```
   ## Vous aurez une sortie comme suit : 
   ````bash
