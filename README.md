@@ -118,6 +118,7 @@ pyhton main.py
   ````
 ---
 
+
 ## B - **Utilisation**
 
 ### 1 - **Exécution du script en ligne de commande (sans alias)**
@@ -238,6 +239,7 @@ Le proccessus sera le même, mais cette fois au lieu de taper pyhton main.py ava
 PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colonne2:type2> ...
 ```
 
+---
 ### C - Activé l'environnement virtuel du projet depuis n'importe quel emplacement ( éviter d'aller à chaque fois dans le répertoire )
   Ouvrez le fichier de configuration avec un éditeur de texte :  
   ```bash
@@ -258,7 +260,9 @@ PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colon
   ````bash
     deactivate
   ````
+## *TAPER `non_alias` peut import où vous êtes pour activer l'environnement du projet*
 
+---
 ## D - Ouvrir la base avec SQLite en ligne de commande
 ### Installer sqlite3
 ````bash
@@ -303,6 +307,7 @@ sqlite3 personnes
   .exit
   ````
 
+---
 ## E - Exécution du test automatique avec l'affichage du temps d'exécution
   Avant d'exécuter toute commande, assurez-vous d'activer l'environnement virtuel :
   ### *Tout d'abord aller dans le répertoire de votre projet et taper cette commande :*
