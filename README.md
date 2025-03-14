@@ -129,7 +129,7 @@ python3 main.py create --db <nom_db> --table <nom_table> --columns <colonne1:typ
 ```
 **Exemple :**
 ```bash
-python3 main.py create --db personnes --table utilisateurs --columns matricule:TEXT nom:TEXT prenom:TEXT date_naissance:DATE status:TEXT
+python3 main.py create --db personnes --table utilisateurs --columns matricule:TEXT nom:TEXT prenom:TEXT datedenaissance:DATE status:TEXT
 ```
 
 #### **Types de données valides**
