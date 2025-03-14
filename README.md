@@ -310,7 +310,6 @@ sqlite3 personnes
 ---
 ## E - Exécution du test automatique avec l'affichage du temps d'exécution
   Avant d'exécuter toute commande, assurez-vous d'activer l'environnement virtuel :
-  ### *Tout d'abord aller dans le répertoire de votre projet et taper cette commande :*
   ```bash
   nom_de_votre_alias_pour_activer_le_projet
   ```
