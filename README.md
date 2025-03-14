@@ -238,6 +238,26 @@ Le proccessus sera le même, mais cette fois au lieu de taper pyhton main.py ava
 PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colonne2:type2> ...
 ```
 
+### E - Activé l'environnement virtuel du projet depuis n'importe quel emplacement ( éviter d'aller à chaque fois dans le répertoire )
+  Ouvrez le fichier de configuration avec un éditeur de texte :  
+  ```bash
+  nano ~/.bashrc
+  ```
+  Ajoutez la ligne suivante à la fin du fichier :  
+  ```bash
+  alias nom_alias='cd /chemin/vers/votre/projet && source venv/bin/activate'
+  ```
+  ## Note : Le chemin doit être absolu, de la racine jusqu'au fichier main.py
+  
+  Rechargez ensuite le fichier de configuration pour appliquer les modifications :  
+  ```bash
+  source ~/.bashrc
+  ```
+
+  ### Note : Pour désactiver l'environnement virtuel taper la commande suivante 
+  ````bash
+    deactivate
+  ````
 
 ## C - Ouvrir la base avec SQLite en ligne de commande
 ### Installer sqlite3
@@ -314,24 +334,4 @@ sqlite3 personnes
   *Après avoir exécuter l'une de ces commandes un fichier test_db.sqlite sera genéré dans votre repertoire de travail, 
       ce fichier correspond à la base de données sqlite avec les données du fichier excel importé*
       ## *Pour explorer ce fichier consulter le rubrique C*
-
-### Note : Pour désactiver l'environnement virtuel taper la commande suivante 
-````bash
-  deactivate
-````
-### E - Activé l'environnement virtuel du projet depuis n'importe quel emplacement ( éviter d'aller à chaque fois dans le répertoire )
-  Ouvrez le fichier de configuration avec un éditeur de texte :  
-  ```bash
-  nano ~/.bashrc
-  ```
-  Ajoutez la ligne suivante à la fin du fichier :  
-  ```bash
-  alias NOM_ALIAS="source /chemin/vers/votre/projet/venv/bin/activate"
-  ```
-  ## Note : Le chemin doit être absolu, de la racine jusqu'au fichier main.py
-  
-  Rechargez ensuite le fichier de configuration pour appliquer les modifications :  
-  ```bash
-  source ~/.bashrc
-  ```
   
