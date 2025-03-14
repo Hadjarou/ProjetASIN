@@ -141,7 +141,7 @@ python3 main.py import --db <nom_db> --table <nom_table> --file <chemin_fichier_
 ```
 **Exemple :**
 ```bash
-python3 main.py import --db personnes --table utilisateurs --file people sample.xlsx
+python3 main.py import --db personnes --table utilisateurs --file people\ sample.xlsx
 ```
 
 #### **Suppression d'une table**
