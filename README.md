@@ -179,11 +179,11 @@ python main.py
 
   ````
 ---
-
-### 1 - **Exécution du script en ligne de commande (sans alias)**
+### 1 - **Exécution du script en ligne de commande sans alias**
 Pour l'exécution sans alias vous devez soit être dans le dossier du projet soit avoir le chemain absolu du fichier main.py
 ## Dans notre cas on considère que nous sommes dans le dossier du projet
 #### **Création d'une table**
+
 ```bash
 python3 main.py create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colonne2:type2> ...
 ```
@@ -292,13 +292,14 @@ source ~/.bashrc
 ### **Exécution du script avec l’alias**
 Une fois l’alias configuré, il est possible d’exécuter les commandes en utilisant `PASIN` directement.
 Le proccessus sera le même, mais cette fois au lieu de taper pyhton main.py avant d'exécuter les commandes on utilise directement `PASIN`
-### *Assurez-vous d'activer l'environnement au préalable*
+### Vérifier si le projet a bien été déployer
+````bash
+PASIN
+````
 **Exemple :**  
 ```bash
 PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colonne2:type2> ...
 ```
-
-
 
 ---
 ## D - Ouvrir la base avec SQLite en ligne de commande
@@ -351,5 +352,3 @@ sqlite3 personnes
   ````
 
 ---
-
-  
