@@ -63,19 +63,81 @@ python3 -m venv venv
 ```
 Cette commande génère un répertoire `venv` contenant toutes les dépendances isolées nécessaires au projet.
 
-### **Activation de l'environnement virtuel**
-Une fois l’environnement virtuel créé, il est impératif de l’activer avant d’installer les dépendances requises.
+---
+### B - Création d'alias pour activer l'environnement 
+Pour démarrer l'environnement avec une commande plus concise, comme `ENVASIN`, vous pouvez définir un alias dans votre fichier de configuration Shell (`~/.bashrc` ou `~/.zshrc`).
+  Ouvrez le fichier de configuration avec un éditeur de texte :  
+  ```bash
+  nano ~/.bashrc
+  ```
+  Ajoutez la ligne suivante à la fin du fichier :  
+  ```bash
+  alias ENVASIN='cd /chemin/vers/votre/projet/ProjetASIN && source venv/bin/activate'
+  ```
+  ## Note : Le chemin doit être absolu, de la racine jusqu'au fichier main.py
+  
+  Rechargez ensuite le fichier de configuration pour appliquer les modifications :  
+  ```bash
+  source ~/.bashrc
+  ```
+  ### Note : Pour désactiver l'environnement virtuel taper la commande suivante 
+  ````bash
+    deactivate
+  ````
+## *TAPER `ENVASIN` peu importe où vous êtes pour activer l'environnement du projet*
 
-```bash
-source venv/bin/activate
-```
+
+## Exécution des tests
+  Avant d'exécuter toute commande, assurez-vous d'activer l'environnement virtuel :
+  ```bash
+  ENVASIN
+  ```
+
+  ## **Installation des dépendances**
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+  ### *Lister le contenu du dossier tests :*
+  ````bash
+    ls tests
+  ````
+  *Le résultat de cette commande sera dans le cas de notre fichier excel fournit:*
+  ````bash
+  'people sample.xlsx'   test_sqlite.py
+  ````
+  ## Note : *Assurer vous que le fichier excel soit bien présent dans le dossier*
+
+  ## Installer pytest pour l'exécution des tests
+  ````bash
+  pip install pytest
+  ````
+  ## 1. Test sans affichage des données après l'importation 
+  ````bash
+  python -m pytest -v tests/test_sqlite.py
+  ````
+  ## 2 Test avec affichage des données après l'importation
+  ````bash
+    python -m pytest -v tests/test_sqlite.py
+  ````
+  *Après avoir exécuter l'une de ces commandes un fichier test_db.sqlite sera genéré dans votre repertoire de travail, 
+      ce fichier correspond à la base de données sqlite avec les données du fichier excel importé*
+      ## *Pour explorer ce fichier consulter le rubrique C*
 
 ---
 
-## **Installation des dépendances**
+## B - **Utilisation**
+
+### **Activation de l'environnement virtuel**
+  ```bash
+  ENVASIN
+  ```
+---
+## **Vérifier les dépendances**
 ```bash
 pip install -r requirements.txt
 ```
+
 ## Vérifier si le projet a bien été déployer
 ```bash
 pyhton main.py
@@ -117,9 +179,6 @@ pyhton main.py
 
   ````
 ---
-
-
-## B - **Utilisation**
 
 ### 1 - **Exécution du script en ligne de commande (sans alias)**
 Pour l'exécution sans alias vous devez soit être dans le dossier du projet soit avoir le chemain absolu du fichier main.py
@@ -194,6 +253,10 @@ python3 main.py describe --db personnes --table utilisateurs
 
 ## 2 - **Exécution du script avec un alias**
 
+  ### **Activation de l'environnement virtuel**
+    ```bash
+    ENVASIN
+    ```
 ### **Rendre le script exécutable**
 Avant de pouvoir utiliser un alias, il est nécessaire de rendre le script exécutable :
 
@@ -222,14 +285,10 @@ source ~/.bashrc
 ```
 
 ---
-
 ### **Activation de l’environnement virtuel**
-Avant d'exécuter toute commande, assurez-vous d'activer l'environnement virtuel :
-### *Tout d'abord aller dans le répertoire de votre projet et taper cette commande :*
-```bash
-source venv/bin/activate
-```
-
+  ```bash
+  ENVASIN
+  ```
 ### **Exécution du script avec l’alias**
 Une fois l’alias configuré, il est possible d’exécuter les commandes en utilisant `PASIN` directement.
 Le proccessus sera le même, mais cette fois au lieu de taper pyhton main.py avant d'exécuter les commandes on utilise directement `PASIN`
@@ -239,28 +298,7 @@ Le proccessus sera le même, mais cette fois au lieu de taper pyhton main.py ava
 PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colonne2:type2> ...
 ```
 
----
-### C - Activé l'environnement virtuel du projet depuis n'importe quel emplacement ( éviter d'aller à chaque fois dans le répertoire )
-  Ouvrez le fichier de configuration avec un éditeur de texte :  
-  ```bash
-  nano ~/.bashrc
-  ```
-  Ajoutez la ligne suivante à la fin du fichier :  
-  ```bash
-  alias ENVASIN='cd /chemin/vers/votre/projet/ProjetASIN && source venv/bin/activate'
-  ```
-  ## Note : Le chemin doit être absolu, de la racine jusqu'au fichier main.py
-  
-  Rechargez ensuite le fichier de configuration pour appliquer les modifications :  
-  ```bash
-  source ~/.bashrc
-  ```
 
-  ### Note : Pour désactiver l'environnement virtuel taper la commande suivante 
-  ````bash
-    deactivate
-  ````
-## *TAPER `ENVASIN` peu importe où vous êtes pour activer l'environnement du projet*
 
 ---
 ## D - Ouvrir la base avec SQLite en ligne de commande
@@ -313,34 +351,5 @@ sqlite3 personnes
   ````
 
 ---
-## E - Exécution du test automatique avec l'affichage du temps d'exécution
-  Avant d'exécuter toute commande, assurez-vous d'activer l'environnement virtuel :
-  ```bash
-  ENVASIN
-  ```
-  ### *Lister le contenu du dossier tests :*
-  ````bash
-    ls tests
-  ````
-  *Le résultat de cette commande sera dans le cas de notre fichier excel fournit:*
-  ````bash
-  'people sample.xlsx'   test_sqlite.py
-  ````
-  ## Note : *Assurer vous que le fichier excel soit bien présent dans le dossier*
 
-  ## Installer pytest pour l'exécution des tests
-  ````bash
-  pip install pytest
-  ````
-  ## 1. Test sans affichage des données après l'importation 
-  ````bash
-  python -m pytest -v tests/test_sqlite.py
-  ````
-  ## 2 Test avec affichage des données après l'importation
-  ````bash
-    python -m pytest -v tests/test_sqlite.py
-  ````
-  *Après avoir exécuter l'une de ces commandes un fichier test_db.sqlite sera genéré dans votre repertoire de travail, 
-      ce fichier correspond à la base de données sqlite avec les données du fichier excel importé*
-      ## *Pour explorer ce fichier consulter le rubrique C*
   
