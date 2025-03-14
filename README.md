@@ -129,9 +129,9 @@ Pour démarrer l'environnement avec une commande plus concise, comme `ENVASIN`, 
 ## B - **Utilisation**
 
 ### **Activation de l'environnement virtuel**
-  ```bash
-  ENVASIN
-  ```
+```bash
+ENVASIN
+```
 ---
 ## **Vérifier les dépendances**
 ```bash
