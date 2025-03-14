@@ -4,7 +4,7 @@
 
 Ce projet permet de créer, importer et administrer une base de données SQLite à partir d'un fichier Excel. Il propose également diverses commandes permettant de lister les tables, d'afficher leur contenu et d'exécuter d'autres opérations, le tout via une interface en ligne de commande (CLI).
 
-## **Installation**
+## A - **Installation**
 
 ### **Installation de Python 3 et de pip**
 
@@ -79,9 +79,9 @@ pip install -r requirements.txt
 
 ---
 
-## **Utilisation**
+## B - **Utilisation**
 
-### **Exécution du script en ligne de commande (sans alias)**
+### 1 - **Exécution du script en ligne de commande (sans alias)**
 Pour l'exécution sans alias vous devez soit être dans le dossier du projet soit avoir le chemain absolu du fichier main.py
 ## Dans notre cas on considère que nous sommes dans le dossier du projet
 #### **Création d'une table**
@@ -152,7 +152,7 @@ python3 main.py describe --db personnes --table utilisateurs
 
 ---
 
-## **Exécution du script avec un alias**
+## 2 - **Exécution du script avec un alias**
 
 ### **Rendre le script exécutable**
 Avant de pouvoir utiliser un alias, il est nécessaire de rendre le script exécutable :
@@ -199,13 +199,14 @@ PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colon
 ```
 
 
-## Ouvrir la base avec SQLite en ligne de commande
+## C - Ouvrir la base avec SQLite en ligne de commande
 ### Installer sqlite3
 ````bash
 sudo apt update
 sudo apt install sqlite3
 ````
 ### Ouvrir la base de données 
+*Assurer vous que la base de données soit dans le même répertoire ou que vous ayez son chemin d'accès*
 ````bash
 sqlite3 <nom_base>
 ````
@@ -242,3 +243,22 @@ sqlite3 personnes
   .exit
   ````
 
+
+## D - Exécution du test automatique avec l'affichage du temps d'exécution
+  ### *Lister le contenu du dossier tests :*
+  ````bash
+    ls tests
+  ````
+  *Le résultat de cette commande sera :*
+  ````bash
+  'people sample.xlsx'   test_sqlite.py
+  ````
+  ## Note : *Assurer vous que le fichier excel soit bien présent dans le dossier*
+
+  ## Installer pytest pour l'exécution des tests
+  ````bash
+  apt install python3-pytest
+  ````
+  ## 1. Test sans affichage des données après l'importation 
+  ````bash
+  pytest -v tests/test_sqlite.py
