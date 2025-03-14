@@ -1,4 +1,4 @@
-# **ImportE - Outil d'importation de fichiers Excel dans une base de données SQLite en ligne de commande**
+# **ProjetASIN - Outil d'importation de fichiers Excel dans une base de données SQLite en ligne de commande**
 
 ## **Description**
 
@@ -49,12 +49,12 @@ pip 20.x.x
 ## **Clonage du dépôt**
 
 ```bash
-git clone https://github.com/Rechmial1/ImportE.git
+git clone https://github.com/Hadjarou/ProjetASIN.git
 ```
 
 ### **Accès au répertoire du projet**
 ```bash
-cd ImportE
+cd ProjetASIN
 ```
 
 ### **Création d'un environnement virtuel**
@@ -162,7 +162,7 @@ chmod +x main.py
 ```
 
 ### **Création d'un alias pour simplifier l’exécution du script**
-Si vous souhaitez exécuter le script avec une commande plus concise, comme `importE`, vous pouvez définir un alias dans votre fichier de configuration Shell (`~/.bashrc` ou `~/.zshrc`).
+Si vous souhaitez exécuter le script avec une commande plus concise, comme `PASIN`, vous pouvez définir un alias dans votre fichier de configuration Shell (`~/.bashrc` ou `~/.zshrc`).
 
 Ouvrez le fichier de configuration avec un éditeur de texte :  
 ```bash
@@ -171,8 +171,9 @@ nano ~/.bashrc
 
 Ajoutez la ligne suivante à la fin du fichier :  
 ```bash
-alias importE="python3 /chemin/vers/votre/projet/importE/main.py"
+alias PASIN="python3 /chemin/vers/votre/projet/ProjetASIN/main.py"
 ```
+  ## Note : Le chemin doit être absolu, de la racine jusqu'au fichier main.py
 
 Rechargez ensuite le fichier de configuration pour appliquer les modifications :  
 ```bash
@@ -189,12 +190,13 @@ source venv/bin/activate
 ```
 
 ### **Exécution du script avec l’alias**
-Une fois l’alias configuré, il est possible d’exécuter les commandes en utilisant `importE` directement.
+Une fois l’alias configuré, il est possible d’exécuter les commandes en utilisant `PASIN` directement.
 ### *Assurez-vous d'activer l'environnement au préalable*
 **Exemple :**  
 ```bash
-importE create --db ma_base --table ma_table --columns nom:TEXT age:INTEGER
+PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colonne2:type2> ...
 ```
+## Le proccessus sera le même, mais cette fois au lieu de taper pyhton main.py avant d'exécuter les commandes on utilise directement `PASIN`
 
 ### *Ouvrir la base avec SQLite en ligne de commande*
 ### Installer sqlite3
