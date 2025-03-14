@@ -233,7 +233,7 @@ source venv/bin/activate
 ### **Exécution du script avec l’alias**
 Une fois l’alias configuré, il est possible d’exécuter les commandes en utilisant `PASIN` directement.
 Le proccessus sera le même, mais cette fois au lieu de taper pyhton main.py avant d'exécuter les commandes on utilise directement `PASIN`
-### *Assurez-vous d'activer l'environnement au préalable* ( Voir option activer l'environnement)
+### *Assurez-vous d'activer l'environnement au préalable*
 **Exemple :**  
 ```bash
 PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colonne2:type2> ...
@@ -247,7 +247,7 @@ PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colon
   ```
   Ajoutez la ligne suivante à la fin du fichier :  
   ```bash
-  alias nom_alias='cd /chemin/vers/votre/projet && source venv/bin/activate'
+  alias ENVASIN='cd /chemin/vers/votre/projet/ProjetASIN && source venv/bin/activate'
   ```
   ## Note : Le chemin doit être absolu, de la racine jusqu'au fichier main.py
   
@@ -260,7 +260,7 @@ PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colon
   ````bash
     deactivate
   ````
-## *TAPER `non_alias` peut import où vous êtes pour activer l'environnement du projet*
+## *TAPER `ENVASIN` peut import où vous êtes pour activer l'environnement du projet*
 
 ---
 ## D - Ouvrir la base avec SQLite en ligne de commande
@@ -311,13 +311,13 @@ sqlite3 personnes
 ## E - Exécution du test automatique avec l'affichage du temps d'exécution
   Avant d'exécuter toute commande, assurez-vous d'activer l'environnement virtuel :
   ```bash
-  nom_de_votre_alias_pour_activer_le_projet
+  ENVASIN
   ```
   ### *Lister le contenu du dossier tests :*
   ````bash
     ls tests
   ````
-  *Le résultat de cette commande sera :*
+  *Le résultat de cette commande sera dans le cas de notre fichier excel fournit:*
   ````bash
   'people sample.xlsx'   test_sqlite.py
   ````
