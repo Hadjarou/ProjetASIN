@@ -238,7 +238,7 @@ Le proccessus sera le même, mais cette fois au lieu de taper pyhton main.py ava
 PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colonne2:type2> ...
 ```
 
-### E - Activé l'environnement virtuel du projet depuis n'importe quel emplacement ( éviter d'aller à chaque fois dans le répertoire )
+### C - Activé l'environnement virtuel du projet depuis n'importe quel emplacement ( éviter d'aller à chaque fois dans le répertoire )
   Ouvrez le fichier de configuration avec un éditeur de texte :  
   ```bash
   nano ~/.bashrc
@@ -259,7 +259,7 @@ PASIN create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colon
     deactivate
   ````
 
-## C - Ouvrir la base avec SQLite en ligne de commande
+## D - Ouvrir la base avec SQLite en ligne de commande
 ### Installer sqlite3
 ````bash
 sudo apt update
@@ -303,7 +303,7 @@ sqlite3 personnes
   .exit
   ````
 
-## D - Exécution du test automatique avec l'affichage du temps d'exécution
+## E - Exécution du test automatique avec l'affichage du temps d'exécution
   Avant d'exécuter toute commande, assurez-vous d'activer l'environnement virtuel :
   ### *Tout d'abord aller dans le répertoire de votre projet et taper cette commande :*
   ```bash
