@@ -267,7 +267,7 @@ sqlite3 personnes
   ````bash
   python -m pytest -v tests/test_sqlite.py
   ````
-  ## 2 Test Test avec affichage des données après l'importation
+  ## 2 Test avec affichage des données après l'importation
   ````bash
     python -m pytest -v tests/test_sqlite.py
   ````
