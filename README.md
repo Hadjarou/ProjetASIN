@@ -76,7 +76,46 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+## Vérifier si le projet a bien été déployer
+```bash
+pyhton main.py
+```
+  ## Vous aurez une sortie comme suit : 
+  ````bash
+    Utilisation des commandes :
+  
+  1. Créer une table :
+     create --db <nom_db> --table <nom_table> --columns <colonne1:type1> <colonne2:type2> ...
+     Exemple : create --db personnes --table utilisateurs --columns matricule:TEXT nom:TEXT prenom:TEXT date_naissance:DATE status:TEXT
+  
+  2. Types de données valides :
+     Les types valides pour les colonnes sont : TEXT, INTEGER, REAL, BLOB, DATE
+  
+  3. Importer un fichier Excel dans une table :
+     import --db <nom_db> --table <nom_table> --file <chemin_fichier_excel>
+     Exemple : import --db personnes --table utilisateurs --file /chemin/vers/fichier.xlsx
+  
+  4. Supprimer une table :
+     delete --db <nom_db> --table <nom_table>
+     Exemple : delete --db personnes --table utilisateurs
+  
+  5. Supprimer la base de données :
+     delete-db --db <nom_db>
+     Exemple : delete-db --db personnes
+  
+  6. Lister les tables :
+     list-tables --db <nom_db>
+     Exemple : list-tables --db personnes
+  
+  7. Voir le contenu d'une table :
+     view --db <nom_db> --table <nom_table>
+     Exemple : view --db personnes --table utilisateurs
+  
+  8. Voir la structure d'une table (DESCRIBE) :
+     describe --db <nom_db> --table <nom_table>
+     Exemple : describe --db personnes --table utilisateurs
 
+  ````
 ---
 
 ## B - **Utilisation**
