@@ -212,6 +212,7 @@ Ajoutez la ligne suivante à la fin du fichier :
 ```bash
 alias PASIN="python3 /chemin/vers/votre/projet/ProjetASIN/main.py"
 ```
+
   ## Note : Le chemin doit être absolu, de la racine jusqu'au fichier main.py
 
 Rechargez ensuite le fichier de configuration pour appliquer les modifications :  
@@ -318,6 +319,19 @@ sqlite3 personnes
 ````bash
   deactivate
 ````
-
-
+### E - Activé l'environnement virtuel du projet depuis n'importe quel emplacement ( éviter d'aller à chaque fois dans le répertoire )
+  Ouvrez le fichier de configuration avec un éditeur de texte :  
+  ```bash
+  nano ~/.bashrc
+  ```
+  Ajoutez la ligne suivante à la fin du fichier :  
+  ```bash
+  alias ENVASIN="source /root/ProjetASIN/venv/bin/activate"
+  ```
+  ## Note : Le chemin doit être absolu, de la racine jusqu'au fichier main.py
+  
+  Rechargez ensuite le fichier de configuration pour appliquer les modifications :  
+  ```bash
+  source ~/.bashrc
+  ```
   
