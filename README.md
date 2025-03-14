@@ -102,7 +102,7 @@ Pour démarrer l'environnement avec une commande plus concise, comme `ENVASIN`, 
   ````bash
     ls tests
   ````
-  *Le résultat de cette commande sera dans le cas de notre fichier excel fournit:*
+  ## Sortie
   ````bash
   'people sample.xlsx'   test_sqlite.py
   ````
