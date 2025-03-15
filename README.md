@@ -126,7 +126,7 @@ Pour démarrer l'environnement avec une commande plus concise, comme `ENVASIN`, 
 
 ---
 
-## B - **Utilisation**
+## C - **Utilisation**
 
 ### **Activation de l'environnement virtuel**
 ```bash
